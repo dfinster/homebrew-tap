@@ -7,7 +7,7 @@ class BranchWrangler < Formula
   on_macos do
     on_arm do
       url "https://github.com/dfinster/branch-wrangler/releases/download/v#{version}/branch-wrangler-v#{version}-darwin-arm64"
-      sha256 "af65e69520a86c1cd47c1a8702327db68a57f917a5e94be7631cdff4841da8b1"
+      sha256 "e226a45267cd59af948c33762d0e7a3e1bfc1174e7fbe8344a5d338b16298291"
     end
 
     on_intel do
