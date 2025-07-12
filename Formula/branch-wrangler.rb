@@ -1,42 +1,42 @@
 class BranchWrangler < Formula
   desc "Cross-platform TUI for managing local Git branches with GitHub integration"
   homepage "https://github.com/dfinster/branch-wrangler"
-  version "0.0.6"
+  version "0.0.8"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/dfinster/branch-wrangler/releases/download/v0.0.6/branch-wrangler-v0.0.6-darwin-arm64"
-      sha256 "d5a4394fbf4952641b29561c86a29cd3b5920c95905657a4db7466d6dcbe0979"
+      url "https://github.com/dfinster/branch-wrangler/releases/download/v0.0.8/branch-wrangler-v0.0.8-darwin-arm64"
+      sha256 "5488f7d113d8f4121e4f2b0bbadfbdecac8dd2bba9cd3f71da2acf04cf4a7d99"
     end
 
     on_intel do
-      url "https://github.com/dfinster/branch-wrangler/releases/download/v0.0.6/branch-wrangler-v0.0.6-darwin-amd64"
-      sha256 "c0b2ddf02d6b66daacbb475ca984adc44d06c7641d81205c30da19bb9152c27b"
+      url "https://github.com/dfinster/branch-wrangler/releases/download/v0.0.8/branch-wrangler-v0.0.8-darwin-amd64"
+      sha256 "d25f4d76a2082ee10082b87f35042b58d43012a2a0970ac2ed50be7cbc158a1d"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/dfinster/branch-wrangler/releases/download/v0.0.6/branch-wrangler-v0.0.6-linux-arm64"
-      sha256 "c4d0574dc168d3c695f9be70c57d0ff4768d6ad54fa09f545ab5d22933c27b00"
+      url "https://github.com/dfinster/branch-wrangler/releases/download/v0.0.8/branch-wrangler-v0.0.8-linux-arm64"
+      sha256 "237a4c854b8c20424eae9c82e129be9caaaf8f631d64a2f744a1c4329d7510d5"
     end
 
     on_intel do
-      url "https://github.com/dfinster/branch-wrangler/releases/download/v0.0.6/branch-wrangler-v0.0.6-linux-amd64"
-      sha256 "2f346d76b7e39a7548199d7c6165691d8dcd0878a228760d230495fa7a83bb81"
+      url "https://github.com/dfinster/branch-wrangler/releases/download/v0.0.8/branch-wrangler-v0.0.8-linux-amd64"
+      sha256 "d5e8a0e95d51c9a5a95ca7f07fe9a6a3b4ebe4fb2d8c8ba1c645b0365a9b3e6b"
     end
   end
 
   def install
     if OS.mac? && Hardware::CPU.arm?
-      bin.install "branch-wrangler-v0.0.6-darwin-arm64" => "branch-wrangler"
+      bin.install "branch-wrangler-v0.0.8-darwin-arm64" => "branch-wrangler"
     elsif OS.mac? && Hardware::CPU.intel?
-      bin.install "branch-wrangler-v0.0.6-darwin-amd64" => "branch-wrangler"
+      bin.install "branch-wrangler-v0.0.8-darwin-amd64" => "branch-wrangler"
     elsif OS.linux? && Hardware::CPU.arm?
-      bin.install "branch-wrangler-v0.0.6-linux-arm64" => "branch-wrangler"
+      bin.install "branch-wrangler-v0.0.8-linux-arm64" => "branch-wrangler"
     elsif OS.linux? && Hardware::CPU.intel?
-      bin.install "branch-wrangler-v0.0.6-linux-amd64" => "branch-wrangler"
+      bin.install "branch-wrangler-v0.0.8-linux-amd64" => "branch-wrangler"
     end
   end
 
