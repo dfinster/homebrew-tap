@@ -44,3 +44,4 @@ class BranchWrangler < Formula
     system bin/"branch-wrangler", "--version"
   end
 end
+
